@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Igor Pelivanovic">
+    <meta name="keywords" content="HTML CSS-sass bootstrap JS-jquery">
+    <meta name="description" content="coffie shop">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="64x64">
+    <script src="https://kit.fontawesome.com/e8295ab5b3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0-beta.0/leaflet.js" integrity="sha512-dXVsE60HPeS7YVfFJXhDogJR3GcrE8TwtkV6lbW0M7rFxrZgPBFCimvKvdldwIYmyrFkEUXlGULyI/M/lhGrzw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0-beta.0/leaflet.css" integrity="sha512-R1nTzP7vsLwNjdybP0Y3uBI9Da0mdZ04VCmH13UyIYgzlIel6/C8uHWfC7WrwESWh2MyIWx0WMZgfkkYKtaQxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Coffie Shop Website Example</title>
+</head>
+<body>
+    <section class="header pt-3 absolute ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img src="data/header-logo.png" alt="" srcset="">
+                </div>
+                <div class="col-8">
+                    <nav class="d-flex justify-content-end">
+                        <ul class="d-flex list-unstyled ">
+                            <li class="mx-3"><a href="#intro" class="text-decoration-none text-uppercase text-light">about</a></li>
+                            <li class="mx-3"><a href="#menu" class="text-decoration-none text-uppercase text-light">products</a></li>
+                            <li class="mx-3"><a href="#contact" class="text-decoration-none text-uppercase text-light">contact</a></li>
+                            <li class="mx-3"><a href="#maps" class="text-decoration-none text-uppercase text-light">how to find us?</a></li>
+                        </ul>
+                        <div class="menu">
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section><!--END HEADER-->
+    <section id="hero" class="hero">
+        <div class="container-fluid">
+            <div class="row vh-100 align-items-center pb-5">
+                <div class="col-8 offset-2 offset-md-0 col-md-12 heroContent text-center">
+                    <img src="data/logo.png" alt="logo">
+                    <h1 class="display-1 text-uppercase text-light ">the home of coffee</h1>
+                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a leo id lacus gravida semper at eu lacus.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#intro">
+            <span class="fa-stack fa-2x">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-angle-down fa-stack-1x"></i>
+            </span>
+        </a>
+    </section><!--END HERO SECTION-->
+    <section id="intro" class="intro pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-12 offset-lg-3 offset-md-2  text-center py-5">
+                    <h2>THE BEST COFFEE SHOP</h2>
+                    <p class="lead text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-lg-4 col-md-6 col-8 offset-2 offset-md-3 offset-lg-0 pb-4 pb-lg-0 text-center text-uppercase">
+                    <img src="data/icon-1.png" alt="">
+                    <h2 class="h4 pt-3">best beans</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 col-8 offset-2 offset-md-3 offset-lg-0 py-4 py-lg-0 text-center text-uppercase">
+                    <img src="data/icon-2.png" alt="">
+                    <h2 class="h4 pt-3">quality milk</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 col-8 offset-2 offset-md-3 offset-lg-0 pt-4 pt-lg-0 text-center text-uppercase" >
+                    <img src="data/icon-3.png" alt="">
+                    <h2 class="h4 pt-3">perfect blend</h2>
+                </div>
+            </div>
+        </div>
+    </section><!--END INTRO SECTION-->
+    <section class="place">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-8 col-12 offset-lg-1 offset-md-2  py-5 px-5">
+                    <h2 class="text-uppercase">great place</h2>
+                    <p class="lead text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <button class="btn bg-primary text-light text-uppercase">find out more</button>
+                </div>
+                <div class="col-lg-5 col-md-12 p-0 offset-lg-1">
+                    <img src="data/great-place.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section><!--END PLACE SECTION-->
+    <section class="beans">
+        <div class="container-fluid">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6 col-8 offset-4 offset-md-6 px-5">
+                    <h2 class="text-light text-uppercase">fresh beans</h2>
+                    <p class="text-muted lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <button class="btn bg-primary text-light text-uppercase">find out more</button>
+                </div>
+            </div>
+        </div>
+    </section><!--END BEANS SECTION-->
+    <section id="menu" class="menu py-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 text-center">
+                    <h2 class="h1 text-uppercase">selection from our menu</h2>
+                    <p class="text-muted lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
+                    <img src="data/coffee-item-1.png" alt="">
+                    <h3 class="h2 text-uppercase pt-3">black cake</h3>
+                    <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <p class="h3">4€</p>
+                </div>
+                <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
+                    <img src="data/coffee-item-2.png" alt="">
+                    <h3 class="h2 text-uppercase pt-3">black coffee</h3>
+                    <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <p class="h3">6€</p>
+                </div>
+                <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
+                    <img src="data/coffee-item-3.png" alt="">
+                    <h3 class="h2 text-uppercase pt-3">espresso</h3>
+                    <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <p class="h3">6€</p>
+                </div>
+                <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
+                    <img src="data/coffee-item-4.png" alt="">
+                    <h3 class="h2 text-uppercase pt-3">latte</h3>
+                    <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <p class="h3">6€</p>
+                </div>
+                <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
+                    <img src="data/coffee-item-5.png" alt="">
+                    <h3 class="h2 text-uppercase pt-3">macarons</h3>
+                    <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <p class="h3">3€</p>
+                </div>
+                <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
+                    <img src="data/coffee-item-6.png" alt="">
+                    <h3 class="h2 text-uppercase pt-3">macchiato</h3>
+                    <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <p class="h3">6€</p>
+                </div>
+            </div>
+        </div>
+    </section><!--END MENU SECTION-->
+    <section id="contact" class="contact ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 offset-md-1 py-5 text-light px-5 text-uppercase">
+                    <h2>you are welcome!</h2>
+                    <p>come on in!</p>
+                    <h4 class="pt-4">weekdays</h3>
+                    <p>08ph-12am</p>
+                    <h4 class="pt-4">weekends</h3>
+                    <p>12ph-02am</p>
+                </div>
+                <div class="col-md-6 contact py-5 text-light px-5">
+                    <h2 class="text-uppercase">contact</h2>
+                    <h4 class="text-uppercase pt-4">phone</h4>
+                    <p><a class="text-decoration-none text-light" href="tel:000111222333">+(000) 111 222 333</a></p>
+                    <h4 class="text-uppercase pt-4">mail</h4>
+                    <p><a class="text-decoration-none text-light" href="mailto:address@domain.com">address@domain.com</a></p>
+                    <h4 class="text-uppercase pt-4">address</h4>
+                    <p>543 TN, doula street NY, New York</p>
+                </div>
+            </div>
+            <div id="maps" class="row">
+                <div class="col-12 p-0">
+                    <div id="map">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--END CONTACT SECTION-->
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="row align-items-center py-3">
+                <div class="col-md-5 offset-md-1">
+                    <p class="text-light m-0">Coffee Shop | &copy; 2020 All rights reserved</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 pt-4 pt-md-0 offset-md-1 offset-lg-0">
+                    <a class="mx-2" href=""><img src="data/facebook-icon.png" alt=""></a>
+                    <a class="mx-2" href=""><img src="data/instagram-icon.png" alt=""></a>
+                    <a class="mx-2" href=""><img src="data/twitter-icon.png" alt=""></a>
+                    <a class="ms-2 me-1" href="https://wa.me/000111222333"><img src="data/phone-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
