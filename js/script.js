@@ -16,7 +16,6 @@ window.addEventListener('load', checkScroll)
 document.addEventListener('scroll', checkScroll)
 
 function checkScroll(){
-    console.log('work')
     if(window.scrollY >= window.innerHeight - header.offsetHeight ){
         header.classList.add("position-fixed");
         header.classList.remove("position-absolute");
