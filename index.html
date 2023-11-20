@@ -7,51 +7,49 @@
     <meta name="author" content="Igor Pelivanovic">
     <meta name="keywords" content="HTML CSS-sass bootstrap JS-jquery">
     <meta name="description" content="coffie shop">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="64x64">
     <script src="https://kit.fontawesome.com/e8295ab5b3.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0-beta.0/leaflet.js" integrity="sha512-dXVsE60HPeS7YVfFJXhDogJR3GcrE8TwtkV6lbW0M7rFxrZgPBFCimvKvdldwIYmyrFkEUXlGULyI/M/lhGrzw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0-beta.0/leaflet.css" integrity="sha512-R1nTzP7vsLwNjdybP0Y3uBI9Da0mdZ04VCmH13UyIYgzlIel6/C8uHWfC7WrwESWh2MyIWx0WMZgfkkYKtaQxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Coffie Shop Website Example</title>
 </head>
 <body>
-    <section class="header pt-3 absolute ">
+    <header id="header" class="p-2 position-absolute z-index-1000 w-100 top-0 left-0">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4">
-                    <img src="data/header-logo.png" alt="" srcset="">
+                <div class="col-8 col-md-5 d-flex align-items-center">
+                    <img class="d-block w-auto " src="data/header-logo.png" alt="logo.png">
                 </div>
-                <div class="col-8">
-                    <nav class="d-flex justify-content-end">
-                        <ul class="d-flex list-unstyled ">
+                <div class="col-4 col-md-7 justify-content-end navbar navbar-expand-md">
+                    <nav class="offcanvas offcanvas-end align-items-center justify-content-center" id="n_bar" >
+                        <ul class="d-flex list-unstyled m-0 ms-md-auto flex-md-row navbar-nav text-center gap-3">
                             <li class="mx-3"><a href="#intro" class="text-decoration-none text-uppercase text-light">about</a></li>
                             <li class="mx-3"><a href="#menu" class="text-decoration-none text-uppercase text-light">products</a></li>
                             <li class="mx-3"><a href="#contact" class="text-decoration-none text-uppercase text-light">contact</a></li>
                             <li class="mx-3"><a href="#maps" class="text-decoration-none text-uppercase text-light">how to find us?</a></li>
                         </ul>
-                        <div class="menu">
-                            
-                        </div>
                     </nav>
+                    <div class="hamburgerMenu navbar-dark">
+                        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#n_bar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </section><!--END HEADER-->
-    <section id="hero" class="hero">
-        <div class="container-fluid">
+    </header><!--END HEADER-->
+    <section id="hero" class="hero w-100 hv-100 position-relative">
+        <div class="container-fluid position-relative">
             <div class="row vh-100 align-items-center pb-5">
                 <div class="col-8 offset-2 offset-md-0 col-md-12 heroContent text-center">
                     <img src="data/logo.png" alt="logo">
-                    <h1 class="display-1 text-uppercase text-light ">the home of coffee</h1>
-                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a leo id lacus gravida semper at eu lacus.</p>
+                    <h1 class="display-1 text-uppercase text-light fw-bold">the home of coffee</h1>
+                    <p class="text-light fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a leo id lacus gravida semper at eu lacus.</p>
                 </div>
             </div>
         </div>
-        <a href="#intro">
+        <a href="#intro" class="position-absolute start-50 bottom-0 translate-middle text-light d-block">
             <span class="fa-stack fa-2x">
                 <i class="far fa-circle fa-stack-2x"></i>
                 <i class="fa-solid fa-angle-down fa-stack-1x"></i>
@@ -62,41 +60,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-8 col-12 offset-lg-3 offset-md-2  text-center py-5">
-                    <h2>THE BEST COFFEE SHOP</h2>
-                    <p class="lead text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+                    <h2 class="fw-bold">THE BEST COFFEE SHOP</h2>
+                    <p class="lead text-muted fw-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
                 </div>
             </div>
             <div class="row pb-5">
                 <div class="col-lg-4 col-md-6 col-8 offset-2 offset-md-3 offset-lg-0 pb-4 pb-lg-0 text-center text-uppercase">
                     <img src="data/icon-1.png" alt="">
-                    <h2 class="h4 pt-3">best beans</h2>
+                    <h2 class="h4 pt-3 fw-bold">best beans</h2>
                 </div>
                 <div class="col-lg-4 col-md-6 col-8 offset-2 offset-md-3 offset-lg-0 py-4 py-lg-0 text-center text-uppercase">
                     <img src="data/icon-2.png" alt="">
-                    <h2 class="h4 pt-3">quality milk</h2>
+                    <h2 class="h4 pt-3 fw-bold">quality milk</h2>
                 </div>
                 <div class="col-lg-4 col-md-6 col-8 offset-2 offset-md-3 offset-lg-0 pt-4 pt-lg-0 text-center text-uppercase" >
                     <img src="data/icon-3.png" alt="">
-                    <h2 class="h4 pt-3">perfect blend</h2>
+                    <h2 class="h4 pt-3 fw-bold">perfect blend</h2>
                 </div>
             </div>
         </div>
     </section><!--END INTRO SECTION-->
     <section class="place">
-        <div class="container-fluid">
+        <div class="container-fluid w-100">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-8 col-12 offset-lg-1 offset-md-2  py-5 px-5">
-                    <h2 class="text-uppercase">great place</h2>
+                    <h2 class="text-uppercase fw-bold">great place</h2>
                     <p class="lead text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                     <button class="btn bg-primary text-light text-uppercase">find out more</button>
                 </div>
                 <div class="col-lg-5 col-md-12 p-0 offset-lg-1">
-                    <img src="data/great-place.jpg" alt="">
+                    <img src="data/great-place.jpg" alt="great-place.jpg" class="d-block w-100 h-auto">
                 </div>
             </div>
         </div>
     </section><!--END PLACE SECTION-->
-    <section class="beans">
+    <section id="beans">
         <div class="container-fluid">
             <div class="row h-100 align-items-center">
                 <div class="col-md-6 col-8 offset-4 offset-md-6 px-5">
@@ -111,46 +109,46 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 text-center">
-                    <h2 class="h1 text-uppercase">selection from our menu</h2>
+                    <h2 class="h1 text-uppercase fw-bold">selection from our menu</h2>
                     <p class="text-muted lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
                 </div>
             </div>
             <div class="row py-5">
                 <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
-                    <img src="data/coffee-item-1.png" alt="">
-                    <h3 class="h2 text-uppercase pt-3">black cake</h3>
+                    <img class="w-100 d-block h-auto" src="data/coffee-item-1.png" alt="item-1">
+                    <h3 class="h2 text-uppercase pt-3 fw-normal">black cake</h3>
                     <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <p class="h3">4€</p>
+                    <p class="h3 fw-normal">4€</p>
                 </div>
                 <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
-                    <img src="data/coffee-item-2.png" alt="">
-                    <h3 class="h2 text-uppercase pt-3">black coffee</h3>
+                    <img class="w-100 d-block h-auto" src="data/coffee-item-2.png" alt="item-2">
+                    <h3 class="h2 text-uppercase pt-3 fw-normal">black coffee</h3>
                     <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <p class="h3">6€</p>
+                    <p class="h3 fw-normal">6€</p>
                 </div>
                 <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
-                    <img src="data/coffee-item-3.png" alt="">
-                    <h3 class="h2 text-uppercase pt-3">espresso</h3>
+                    <img class="w-100 d-block h-auto" src="data/coffee-item-3.png" alt="item-3">
+                    <h3 class="h2 text-uppercase pt-3 fw-normal">espresso</h3>
                     <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <p class="h3">6€</p>
+                    <p class="h3 fw-normal">6€</p>
                 </div>
                 <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
-                    <img src="data/coffee-item-4.png" alt="">
-                    <h3 class="h2 text-uppercase pt-3">latte</h3>
+                    <img class="w-100 d-block h-auto" src="data/coffee-item-4.png" alt="item-4">
+                    <h3 class="h2 text-uppercase pt-3 fw-normal">latte</h3>
                     <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <p class="h3">6€</p>
+                    <p class="h3 fw-normal">6€</p>
                 </div>
                 <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
-                    <img src="data/coffee-item-5.png" alt="">
-                    <h3 class="h2 text-uppercase pt-3">macarons</h3>
+                    <img class="w-100 d-block h-auto" src="data/coffee-item-5.png" alt="item-5">
+                    <h3 class="h2 text-uppercase pt-3 fw-normal">macarons</h3>
                     <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <p class="h3">3€</p>
+                    <p class="h3 fw-normal">3€</p>
                 </div>
                 <div class="col-lg-4 col-md-6 px-5 py-5 text-center">
-                    <img src="data/coffee-item-6.png" alt="">
-                    <h3 class="h2 text-uppercase pt-3">macchiato</h3>
+                    <img class="w-100 d-block h-auto" src="data/coffee-item-6.png" alt="item-6">
+                    <h3 class="h2 text-uppercase pt-3 fw-normal">macchiato</h3>
                     <p class="pt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <p class="h3">6€</p>
+                    <p class="h3 fw-normal">6€</p>
                 </div>
             </div>
         </div>
@@ -176,7 +174,7 @@
                     <p>543 TN, doula street NY, New York</p>
                 </div>
             </div>
-            <div id="maps" class="row">
+            <div id="map" class="row">
                 <div class="col-12 p-0">
                     <div id="map">
 
@@ -185,13 +183,13 @@
             </div>
         </div>
     </section><!--END CONTACT SECTION-->
-    <section class="footer">
+    <footer id="footer" class="footer">
         <div class="container-fluid">
             <div class="row align-items-center py-3">
                 <div class="col-md-5 offset-md-1">
-                    <p class="text-light m-0">Coffee Shop | &copy; 2020 All rights reserved</p>
+                    <p class="text-light m-0 text-center text-md-start">Coffee Shop | &copy; 2020 All rights reserved</p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5 pt-4 pt-md-0 offset-md-1 offset-lg-0">
+                <div class="col-12 col-md-6 col-lg-5 pt-4 pt-md-0 offset-md-1 offset-lg-0 text-md-end text-center">
                     <a class="mx-2" href=""><img src="data/facebook-icon.png" alt=""></a>
                     <a class="mx-2" href=""><img src="data/instagram-icon.png" alt=""></a>
                     <a class="mx-2" href=""><img src="data/twitter-icon.png" alt=""></a>
@@ -199,7 +197,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>

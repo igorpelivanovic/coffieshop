@@ -3,14 +3,12 @@ body {
   font-family: "Oswald", sans-serif;
 }
 body section.header {
-  z-index: 2;
-  width: 100%;
-  top: 0;
-  left: 0;
+  z-index: 1000;
+}
+body section.header nav {
+  height: 100vh;
 }
 body section.header img {
-  display: block;
-  width: auto;
   height: 25px;
 }
 body section.header.absolute {
@@ -24,9 +22,12 @@ body .fixed {
   position: fixed;
   top: 0;
   left: 0;
-  transform: translateY(-100%);
   width: 100%;
   background-color: #c69572;
+}
+body .offcanvas {
+  background-color: #312423;
+  position: fixed;
 }
 body section.hero {
   background: url("../data/hero.jpg") center center/cover no-repeat;
@@ -126,31 +127,32 @@ body section.footer {
     width: 1150px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   section.footer .col-md-5.offsetmd-1 {
+    text-align: center;
+  }
+  section.footer .col-12.col-md-6.col-lg-5.pt-4.pt-md-0.offset-md-1.offset-lg-0 {
+    text-align: center;
+  }
+
+  section.footer .col-md-5.offsetmd-1 {
+    text-align: center;
+  }
+  section.footer .col-12.col-md-6.col-lg-5.pt-4.pt-md-0.offset-md-1.offset-lg-0 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  body section.header nav {
+    height: 100%;
+  }
+  body section.footer .col-md-5.offsetmd-1 {
     text-align: start;
   }
-  section.footer .col-12.col-md-6.col-lg-5.pt-4.pt-md-0.offset-md-1.offset-lg-0 {
+style  body section.footer .col-12.col-md-6.col-lg-5.pt-4.pt-md-0.offset-md-1.offset-lg-0 {
     text-align: end;
   }
-}
-@media screen and (max-width: 767px) {
-  section.footer .col-md-5.offsetmd-1 {
-    text-align: center;
-  }
-  section.footer .col-12.col-md-6.col-lg-5.pt-4.pt-md-0.offset-md-1.offset-lg-0 {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  section.footer .col-md-5.offsetmd-1 {
-    text-align: center;
-  }
-  section.footer .col-12.col-md-6.col-lg-5.pt-4.pt-md-0.offset-md-1.offset-lg-0 {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
+
   .heroContent img {
     width: 256px;
   }

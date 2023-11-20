@@ -7,21 +7,22 @@ var greenIcon = L.icon({
     iconUrl: 'data/map-icon.png',
 });
 L.marker([40.741770, -73.983090], {icon: greenIcon}).addTo(map);
-let header = document.querySelector(".header");
-let scrooly = window.pageYOffset;
-document.addEventListener("scroll", function(){
-    if(window.scrollY >= window.innerHeight){
+
+
+let header = document.querySelector("#header");
+let scroll = window.pageYOffset;
+
+window.addEventListener('load', checkScroll)
+document.addEventListener('scroll', checkScroll)
+
+function checkScroll(){
+    console.log('work')
+    if(window.scrollY >= window.innerHeight - header.offsetHeight ){
+        header.classList.add("position-fixed");
+        header.classList.remove("position-absolute");
         
-        header.classList.add("fixed");
-        header.classList.remove("absolute");
-        if(scrooly > window.pageYOffset){
-            header.classList.add("transform");
-        }else{
-            header.classList.remove("transform");
-        }
     }else{
-        header.classList.remove("transform");
-        header.classList.replace("fixed", "absolute");
+        header.classList.replace("position-fixed", "position-absolute");
     }
-    scrooly = window.pageYOffset;
-})
+    scroll = window.pageYOffset;
+}

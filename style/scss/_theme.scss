@@ -1,0 +1,24 @@
+@use 'sass:map';
+@import './variables';
+
+body{
+    header.position-fixed{
+        background-color: map.get($theme, primary);
+    }
+    section{
+        &#intro{
+            background-color: map.get($theme, background);
+        }
+        &#menu{
+            background-color: map.get($theme, background);
+        }
+        &#contact{
+            .col-md-6.contact{
+                background-color: map.get($theme, secondery);
+            }
+        }
+    }
+    footer{
+        background-color: map.get($theme, accent);
+    }
+}

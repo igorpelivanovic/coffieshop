@@ -1,0 +1,53 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    scroll-margin-top: 55px;
+}
+body{
+    header{
+        z-index: 1000;
+        nav{
+            height: 100vh;
+        }
+        img{
+            height: 25px; 
+        }
+    }
+    // END HEADER
+    section{
+        &#hero{
+            background: url("../data/hero.jpg") center center/cover no-repeat;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #4133329c;
+            }
+            .container-fluid{
+                .heroContent{
+                    img{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        // END HERO SECTION
+        &#beans{
+            .container-fluid{
+                background: url("../data/fresh-beans.jpg") center center/cover no-repeat ;
+                height: 650px;
+            }
+        }
+        // END BEANS SECTION
+        &#contact{
+            background:  linear-gradient(90deg, #36313782 0%, #36313782 100%), url("../data/contact-img.jpg") left bottom/cover no-repeat;
+            #map{
+                height: 480px;
+            }
+        }
+        // END CONTACT SECTION
+    }
+
+}
