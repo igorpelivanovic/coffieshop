@@ -1,6 +1,6 @@
 # COFFEE-SHOP
 
-## 📔WHAT IS IT?
+## :notebook_with_decorative_cover:WHAT IS IT?
 
 Coffie shop is website made in HTML + SCSS + Bootstrap v5.1.3, and use Leafletjs libery. Present website of family bussines-coffie shop.
 
